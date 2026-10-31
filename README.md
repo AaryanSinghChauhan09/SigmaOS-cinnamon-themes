@@ -1,16 +1,18 @@
-# SigmaOS-cinnamon-themes
+# SigmaOS Cinnamon themes
 
-Part of SigmaOS multi-repository architecture.
+This crate is currently a `no_std` identity scaffold. Its only public type
+constructs a `Component` with the fixed name `SigmaOS Component`. It does not
+provide theme assets, load styles, or change desktop appearance.
 
-## Inspiration
+The inline unit test checks only the fixed scaffold name; it does not validate
+theme selection or rendering.
 
-This component is inspired by Linux Mint and Omarchy Linux to provide:
-- Single responsibility: One clear purpose
-- Loose coupling: Minimal dependencies
-- Stable interfaces: Well-defined APIs
+## Build
 
-## Status
+```sh
+cargo check --lib
+```
 
-- Architecture: Designed
-- Implementation: Planned
-- Testing: Planned
+## License
+
+Apache-2.0. See [`Cargo.toml`](Cargo.toml).
