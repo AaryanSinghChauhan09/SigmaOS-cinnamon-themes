@@ -4,6 +4,7 @@
 //! Theme/asset registry: name -> resource path with uniqueness and non-empty validation.
 //! Principles: single responsibility, fail-fast, defensive programming,
 //! component isolation, stable API, deterministic tests.
+#![forbid(unsafe_code)]
 
 use std::fmt;
 use std::collections::BTreeMap;
